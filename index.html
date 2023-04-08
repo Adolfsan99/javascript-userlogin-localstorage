@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <style>
+    form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+label {
+  margin-top: 10px;
+}
+
+input {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 5px 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+</style>
+
+<form>
+    <input type="text" id="nombre" placeholder="Nombre">
+    <input type="text" id="apellido" placeholder="Apellido">
+    <input type="text" id="dni" placeholder="DNI">
+    <input type="number" id="edad" placeholder="Edad">
+    <input type="tel" id="telefono" placeholder="Teléfono">
+    <input type="email" id="correo" placeholder="Correo electrónico">
+    <input type="password" id="contraseña" placeholder="Contraseña">
+    <input type="password" id="contraseña-confirmacion" placeholder="Confirmar contraseña">
+    <input type="text" id="codigo-acceso" placeholder="Código de acceso">
+    <button type="button" onclick="signUpFunc()">Registrarse</button>
+  </form>
+
+  <br><br><br>
+  
+<form>
+    <input type="email" id="login-correo" placeholder="Correo electrónico">
+    <input type="password" id="login-contraseña" placeholder="Contraseña">
+    <input type="text" id="login-codigo-acceso" placeholder="Código de acceso">
+    <button type="button" onclick="loginFunc()">Iniciar sesión</button>
+  </form>  
+
+<script src="/app.js"></script>
+
+</body>
+</html>
